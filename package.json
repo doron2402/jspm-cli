@@ -12,11 +12,12 @@
     "rsvp": "~3.0.3",
     "graceful-fs": "~2.0.1",
     "ncp": "~0.5.0",
-    "traceur": "0.0.32",
+    "traceur": "0.0.46",
     "uglify-js": "~2.4.10",
-    "jspm-github": "~0.2.4",
-    "jspm-npm": "~0.2.5",
-    "minimatch": "^0.2.14"
+    "jspm-github": "~0.10.0",
+    "jspm-npm": "~0.17.0",
+    "minimatch": "^0.2.14",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "mocha": "~1.17.1"
@@ -29,6 +30,9 @@
     "jspm": "./jspm.js"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha"
-  }
+    "test": "node_modules/.bin/mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
