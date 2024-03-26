@@ -15,7 +15,7 @@
     "traceur": "0.0.32",
     "uglify-js": "~2.4.10",
     "jspm-github": "~0.2.4",
-    "jspm-npm": "~0.2.5",
+    "jspm-npm": "~0.29.2",
     "minimatch": "^0.2.14"
   },
   "devDependencies": {
